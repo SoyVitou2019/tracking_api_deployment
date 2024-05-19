@@ -83,7 +83,7 @@ def get_root():
     return {'message': 'Tracking activityes API'}
 
 @app.post('/predict')
-async def predict(data: dict):
+def predict(data: dict):
     try:
         image = np.array(data['feature'])
         resized_image = cv2.resize(image, (224, 224))
