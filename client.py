@@ -5,7 +5,7 @@ import json
 
 # Load and preprocess your image
 # image_path = 'D:/Github/tracking_api_deployment/testing_dataset/sct-mon1_2024-05-12_22-05-41.png'
-image_path = 'D:/Github/tracking_api_deployment/testing_dataset/study_img_1.png'
+image_path = './testing_dataset/study_img_1.png'
 image = cv2.imread(image_path)
 resized_image = cv2.resize(image, (224, 224))
 

@@ -26,6 +26,8 @@ RUN pip install --no-cache-dir -r /code/requirements.txt
 # Install TensorFlow with GPU support
 RUN pip install tensorflow[extra,gpu]
 
+RUN apt-get install -y libgl1-mesa-glx libglib2.0-0
+
 # Copy the rest of the application code
 COPY . /code
 
